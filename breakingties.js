@@ -6,6 +6,8 @@ await fetch('https://raw.githubusercontent.com/switchangel/strudel-scripts/refs/
 // Load local samples (if you use a local sample server, otherwise Strudel falls back to online defaults)
 // samples('http://localhost:5432')
 
+setCpm(135/4)
+
 // 2. ORIGINAL PIANO ARPEGGIO (Unchanged)
 $: note("[~ <d4!4 ds4!2> ~ g4 ~ bb4 ~ <d5!4 ds5!2>]")
   .sound("piano")
@@ -21,7 +23,7 @@ $: note("[~ <d4!4 ds4!2> ~ g4 ~ bb4 ~ <d5!4 ds5!2>]")
 $: note("<[g3,bb3,d4] [g3,bb3,eb4]>")
   .sound("supersaw")             // Changed sound to supersaw
   .slow(4)
-  .rlpf(slider(0.35, 0.05, 0.9)) // Low-pass filter with interactive slider for sweeps!
+  .rlpf(slider(0.8167, 0.05, 0.9)) // Low-pass filter with interactive slider for sweeps!
   .lpenv(1.5)                    // Filter envelope from the prebake script
   // .trancegate(1.5, 45, 1)     // Uncomment if you want to gate/pump the strings
   .room(2)
@@ -41,11 +43,4 @@ $: n("~ 0 ~ 0 ~ 0 ~ 0")
   .gain(0.7)
   .orbit(3)
 
-// 5. KICK DRUM
-$: s("[bd]*4")
-  .bank("tr909")
-  .dec(0.6)
-  .shape(0.4)
-  .gain(1.3)
-  .compressor("-15:40:10:.001:.01")
-  .orbit(0)
+$: s("rolandtr909_bd:2!4").gain(1.2)._scope()  .orbit(0)
