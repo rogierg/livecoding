@@ -2,7 +2,7 @@
 
 ## Curious?
 
-We work with code every day, but music is also built on patterns and logical structures. In this live demo I'll show how we can generate music directly in the browser using only code, and how musical ideas like rhythm, harmony, and progression can be expressed through simple logic and repetition.
+We work with code every day, but music is also built on patterns and logical structures. In this live demo I'll show how we can generate music directly in the browser using only code, and how musical [...]
 
 ---
 
@@ -22,17 +22,17 @@ We work with code every day, but music is also built on patterns and logical str
 
 ## Outline
 
-### 1. Piano: Notes
-Start with the basics — play a melody using note names and numbers on a piano sound. Introduce sequences, rhythm, and how notes map to pitches.
+### 1. Patterns
+Start with the basics — play patterns using Strudel mini-notation. Learn sequences, rhythm notation, rests, and how to build repeatable rhythmic ideas. See [patterns.js](patterns.js) for examples.
 
-### 2. Arpeggio
-Turn the notes into an arpeggio — a rapid succession of individual notes from a chord. Show how speed, repetition, and pattern structure create movement.
+### 2. Synthesis
+Understand how to shape sound at the source — oscillators, waveforms, and parameters. Create custom tones and explore the building blocks of synthesis before adding effects.
 
 ### 3. Strings: Chords
-Introduce a second layer using a strings sound playing chords. Show how multiple notes played together create harmony.
+Introduce a melodic layer using a strings sound playing chords. Show how multiple notes played together create harmony and layer with existing patterns.
 
 ### 4. Arpeggio and Strings Together — Transposing
-Combine both layers and play them simultaneously. Show how to transpose the pattern — shifting all notes up or down — to create chord progressions.
+Build arpeggios and combine them with other layers. Show how to transpose patterns — shifting notes up or down — to create chord progressions and evolving textures.
 
 ### 5. Effects and Filters
 Shape the sound with effects: low-pass filter to add warmth or brightness, reverb for space, delay for echo. Show how effects bring the music to life.
