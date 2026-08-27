@@ -9,37 +9,42 @@ await fetch('https://raw.githubusercontent.com/switchangel/strudel-scripts/refs/
 setCpm(135/4)
 
 // 2. ORIGINAL PIANO ARPEGGIO (Unchanged)
-$: note("[~ <d4!4 ds4!2> ~ g4 ~ bb4 ~ <d5!4 ds5!2>]")
-  .sound("piano")
+$: note("[~ <d4!4 ds4!4> ~ g4 ~ bb4 ~ <d5!4 ds5!4>]")
+  .sound("gm_lead_2_sawtooth")
   .decay(0.1)
   .sustain(0)
+  .rlpf(slider(0.657499999999999, 0.05, 0.95))
   .room(0.6)
-  .delay(0.5)
-  .delaytime(1/8)
+  .delay(0.8)
+  .delaytime(1/3)
   .delayfeedback(0.6)
   .orbit(2)
 
-// 3. SUPERSAW STRINGS (With filter + slider & trancegate)
-$: note("<[g3,bb3,d4] [g3,bb3,eb4]>")
-  .sound("supersaw")             // Changed sound to supersaw
+// 3. SUPERSAW CHORDS — frisson-tuned progression
+// Gm7 → Eb^7 (♭VI) → Bb^7 → D7 (V7): Eb and D7 are primary frisson triggers
+$: chord("<Gm7 Eb^7 BbM7 D7>").dict('ireal')
+  .voicing()
+  .s("supersaw")
   .slow(4)
-  .rlpf(slider(0.8167, 0.05, 0.9)) // Low-pass filter with interactive slider for sweeps!
-  .lpenv(1.5)                    // Filter envelope from the prebake script
-  // .trancegate(1.5, 45, 1)     // Uncomment if you want to gate/pump the strings
+  .seg(16)
+  .detune(0.4)
+  .rlpf(slider(0.949999999999999, 0.05, 0.95))
   .room(2)
   .delay(0.4)
   .delaytime(1/4)
   .delayfeedback(0.4)
-  .gain(0.4)
+  .gain(0.35)
   .orbit(1)
+  //.trancegate(1.5, 45, 1) //uncomment to gate/pump the chords
 
 // 4. OFFBEAT BASS (Optional for extra SwitchAngel trance drive)
 $: n("~ 0 ~ 0 ~ 0 ~ 0")
   .add("<-14!4 -13!2>")
   .scale("g:minor")
-  .sound("sawtooth")
+  .add(note(-12))
+  .sound("square")
   .decay(0.2)
-  .lpf(700)
+  .rlpf(slider(0.4461, 0.05, 0.9))
   .gain(0.7)
   .orbit(3)
 
