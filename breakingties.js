@@ -1,3 +1,4 @@
+// @title Breaking Ties
 // 1. LOAD PREBAKE SCRIPT (SwitchAngel helpers)
 await fetch('https://raw.githubusercontent.com/switchangel/strudel-scripts/refs/heads/main/prebake.strudel')
   .then(r => r.text())
@@ -8,7 +9,7 @@ await fetch('https://raw.githubusercontent.com/switchangel/strudel-scripts/refs/
 
 setCpm(135/4)
 
-// 2. ORIGINAL PIANO ARPEGGIO (Unchanged)
+// 2. ARPEGGIO
 $: note("[~ <d4!4 ds4!4> ~ g4 ~ bb4 ~ <d5!4 ds5!4>]")
   .sound("gm_lead_2_sawtooth")
   .decay(0.1)

@@ -1,3 +1,4 @@
+// @title SwitchAngel
 await fetch('https://raw.githubusercontent.com/switchangel/strudel-scripts/refs/heads/main/prebake.strudel')
   .then(r => r.text())
   .then(code => eval(code))

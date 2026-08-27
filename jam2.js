@@ -1,3 +1,4 @@
+// @title Jam 2
 setcpm(130/4)
 
 // ===== HARMONY (single control point) =====
