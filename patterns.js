@@ -5,7 +5,8 @@ await fetch('https://raw.githubusercontent.com/switchangel/strudel-scripts/refs/
   .then(code => eval(code))
 
 // ARPEGGIO
-$: note("[~ d4 ~ g4 ~ bb4 ~ d5]")
+$: n("[~ 0 ~ 3 ~ 5 ~ 7]")
+  .scale("D4:minor")
   .sound("piano")
   .attack(0.01)
   .sustain(0.5)

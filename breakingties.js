@@ -10,7 +10,8 @@ await fetch('https://raw.githubusercontent.com/switchangel/strudel-scripts/refs/
 setCpm(135/4)
 
 // 2. ARPEGGIO
-$: note("[~ <d4!4 ds4!4> ~ g4 ~ bb4 ~ <d5!4 ds5!4>]")
+$: n("[~ <0!4 1!4> ~ 3 ~ 5 ~ <7!4 8!4>]")
+  .scale("D4:phrygian")
   .sound("gm_lead_2_sawtooth")
   .decay(0.1)
   .sustain(0)
