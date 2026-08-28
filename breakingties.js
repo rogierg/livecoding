@@ -3,8 +3,9 @@
 // - Starts with just a kick
 // - Then some kind of chord on the first and second beat
 // - Then a soft choir kind of sound comes in
-// - Then the typical dum dumdumdum trance bass
+// - Then the typical dum dadumdum trance bass
 // - And only then the arpeggio
+// CAN START BREAKDOWN FROM HERE
 
 // 1. LOAD PREBAKE SCRIPT (SwitchAngel helpers)
 await fetch('https://raw.githubusercontent.com/switchangel/strudel-scripts/refs/heads/main/prebake.strudel')
