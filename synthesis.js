@@ -4,17 +4,10 @@ await fetch('https://raw.githubusercontent.com/switchangel/strudel-scripts/refs/
   .then(r => r.text())
   .then(code => eval(code))
 
-// ARPEGGIO
-$: n("[~ 0 ~ 3 ~ 5 ~ 7]")
-  .scale("D4:minor")
-  .sound("piano")
-  .attack(0.01)
-  .sustain(0.5)
-  .release(0.2)
-  .rlpf(slider(0.869899999999999, 0.05, 0.95))
-  //.room(0.6)
-  //.delay(0.8)
-  //.delaytime(1/3)
-  //.delayfeedback(0.6)
+// SINGLE NOTE
+$: note("d4")
+  .sound("sine")
+  .attack(0.5)
+  .decay(0.5)
   .orbit(0)
   ._scope()
