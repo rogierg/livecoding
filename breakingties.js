@@ -15,13 +15,15 @@ await fetch('https://raw.githubusercontent.com/switchangel/strudel-scripts/refs/
 
 // samples('http://localhost:5432')
 samples('github:bubobubobubobubo/dough-waveforms')
+samples('github:rogierg/livecoding')
 
 setCpm(135/4)
 
 // STEP 1: KICK
 $: s("rolandtr909_bd:2!4").gain(1.2)._scope().orbit(0)
-_$: s("[rolandtr909_hh rolandtr909_hh](3,8)").gain(0.5)
+$: s("[rolandtr909_hh rolandtr909_hh](3,8)").gain(0.5)
   .delay(0.5).delaytime(1/3).delayfeedback(0.3)
+_$:s("~ rolandtr909_oh").fast(4).gain(0.5).decay(0.08)
 
 // STEP 2: CHORD STABS — hits on beat 1 and 2, enable by removing _
 _$: chord("<Gm7 Eb^7 BbM7 D7>").dict('ireal')
@@ -31,7 +33,7 @@ _$: chord("<Gm7 Eb^7 BbM7 D7>").dict('ireal')
   .sustain(0)
   .slow(4).struct("[~ 1][~ [1 1]] ~ ~")
   .detune(0.4)
-  .rlpf(slider(0.7, 0.05, 0.95))
+  .rlpf(slider(0.550399999999999, 0.05, 0.95))
   .room(1)
   .gain(0.6)
   .orbit(1)
@@ -63,12 +65,19 @@ _$: n("[~ <0!4 1!4> ~ 3 ~ 5 ~ <7!4 8!4>]")
   .sound("gm_lead_2_sawtooth")
   .decay(0.1)
   .sustain(0)
-  .rlpf(slider(0.657499999999999, 0.05, 0.95))
+  .rlpf(slider(0.738499999999999, 0.05, 0.95))
   .room(0.6)
   .delay(0.8)
   .delaytime(1/3)
   .delayfeedback(0.6)
   .orbit(2)
+
+// VOCALS — each sample plays for 4 bars in order, enable by removing _
+_$: s("<1_windblows 2_tothebone 3_youknow 4_notalone>")
+  .slow(4)
+  .room(0.6)
+  .rhpf(slider(0.4199, 0.05, 0.95))
+  .gain(0.8)
 
 // == BREAKDOWN IDEAS ==
 // - add .trancegate(1.5, 45, 1) to chords
