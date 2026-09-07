@@ -19,6 +19,7 @@ The patterns file has uncommentable blocks for explaining effects. This is a liv
 ## References
 
 - [Strudel Workshop Documentation](strudel-docs.md) — full local copy of the strudel.cc workshop and reference pages
+- [strudel-samples.alternet.site](https://strudel-samples.alternet.site) — community-hosted sample packs, load with `samples('github:user/repo')` or direct URL
 
 ---
 
@@ -43,3 +44,5 @@ Introduce a second layer — supersaw chords alongside the arpeggio. Show how ha
 
 ### 5. Rhythm
 Add the drum section — build a pattern from scratch, swap sounds, and use dynamics to make it hit. See [rhythm.js](rhythm.js).
+
+Introduce Euclidean rhythms with the `(hits, steps)` syntax — a mathematical way to distribute beats as evenly as possible over a number of steps. `bd(3,8)` gives the classic tresillo, `hh(5,8)` a bossa nova feel. A third argument rotates the pattern. Stack multiple Euclidean patterns for complex grooves with minimal notation.

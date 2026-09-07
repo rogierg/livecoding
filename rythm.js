@@ -82,5 +82,18 @@ $: stack(
 setcpm(120/4)
 $: sound("hh*16").bank("RolandTR909").mask("[1 0 1 0]*4").off(1/32, x => x)
 
+// Euclidean rhythms — (hits, steps) distributes hits as evenly as possible
+// Classic patterns used in world music and electronic music
+$: sound("bd(3,8)").bank("RolandTR909")          // tresillo — 3 hits over 8 steps
+$: sound("hh(5,8)").bank("RolandTR909")          // bossa nova feel
+$: sound("sd(7,16)").bank("RolandTR909")         // minimal techno snare
+$: sound("bd(3,8), hh(5,8), sd(2,8)").bank("RolandTR909") // stacked euclidean groove
+
+// Third argument rotates the pattern (shifts the starting position)
+$: sound("hh(3,8,2)").bank("RolandTR909")        // same rhythm, different feel
+
+// Subdivide each hit into two 16th notes
+$: sound("[hh hh](3,8)").bank("RolandTR909")     // double-tap on each euclidean hit
+
 // Tips: try combining `mask`, `ply`, `off`, `slow` and `fast` to sculpt grooves.
 // Save and modify this file during a live coding session to experiment with the feel.

@@ -1,24 +1,64 @@
 // @title Breaking Ties
-// SONG DESCRIPTION:
-// - Starts with just a kick
-// - Then some kind of chord on the first and second beat
-// - Then a soft choir kind of sound comes in
-// - Then the typical dum dadumdum trance bass
-// - And only then the arpeggio
-// CAN START BREAKDOWN FROM HERE
+// LIVE BUILD-UP ORDER:
+// 1. Kick only
+// 2. Chord stabs on beat 1 and 2
+// 3. Choir pad comes in
+// 4. Trance bass (dum dadumdum)
+// 5. Arpeggio
+// == CAN START BREAKDOWN FROM HERE ==
+// Enable trancegate on chords, filter down arpeggio, kill bass, etc.
 
-// 1. LOAD PREBAKE SCRIPT (SwitchAngel helpers)
+// LOAD PREBAKE SCRIPT
 await fetch('https://raw.githubusercontent.com/switchangel/strudel-scripts/refs/heads/main/prebake.strudel')
   .then(r => r.text())
   .then(code => eval(code))
 
-// Load local samples (if you use a local sample server, otherwise Strudel falls back to online defaults)
 // samples('http://localhost:5432')
+samples('github:bubobubobubobubo/dough-waveforms')
 
 setCpm(135/4)
 
-// 2. ARPEGGIO
-$: n("[~ <0!4 1!4> ~ 3 ~ 5 ~ <7!4 8!4>]")
+// STEP 1: KICK
+$: s("rolandtr909_bd:2!4").gain(1.2)._scope().orbit(0)
+_$: s("[rolandtr909_hh rolandtr909_hh](3,8)").gain(0.5)
+  .delay(0.5).delaytime(1/3).delayfeedback(0.3)
+
+// STEP 2: CHORD STABS — hits on beat 1 and 2, enable by removing _
+_$: chord("<Gm7 Eb^7 BbM7 D7>").dict('ireal')
+  .voicing()
+  .s("supersaw")
+  .decay(0.1)
+  .sustain(0)
+  .slow(4).struct("[~ 1][~ [1 1]] ~ ~")
+  .detune(0.4)
+  .rlpf(slider(0.7, 0.05, 0.95))
+  .room(1)
+  .gain(0.6)
+  .orbit(1)
+
+// STEP 3: CHOIR PAD — soft layer, enable by removing _
+_$: chord("<Gm7 Eb^7 BbM7 D7>").dict('ireal')
+  .voicing()
+  .s("wt_stringbox:7")
+  .rhpf(slider(0.05, 0.05, 0.95))
+  .slow(4).seg(16)
+  .room(2)
+  .gain(0.35)
+  .orbit(4)
+
+// STEP 4: TRANCE BASS — dum dadumdum, enable by removing _
+_$: n("<3@3 4 5 @3 6>".add("-14, -21")).scale("D4:phrygian")
+  .s("z_sawtooth")
+  .decay(0.2)
+  .sustain(0)
+  .trancegate(1.5, 45, 1)
+  .struct("[1@2 1 1]*4")
+  .lpenv(2)
+  .rlpf(slider(0.28885, 0.05, 0.9))
+  .orbit(3)
+
+// STEP 5: ARPEGGIO — enable by removing _
+_$: n("[~ <0!4 1!4> ~ 3 ~ 5 ~ <7!4 8!4>]")
   .scale("D4:phrygian")
   .sound("gm_lead_2_sawtooth")
   .decay(0.1)
@@ -30,32 +70,8 @@ $: n("[~ <0!4 1!4> ~ 3 ~ 5 ~ <7!4 8!4>]")
   .delayfeedback(0.6)
   .orbit(2)
 
-// 3. SUPERSAW CHORDS — frisson-tuned progression
-// Gm7 → Eb^7 (♭VI) → Bb^7 → D7 (V7): Eb and D7 are primary frisson triggers
-$: chord("<Gm7 Eb^7 BbM7 D7>").dict('ireal')
-  .voicing()
-  .s("supersaw")
-  .slow(4)
-  .seg(16)
-  .detune(0.4)
-  .rlpf(slider(0.949999999999999, 0.05, 0.95))
-  .room(2)
-  .delay(0.4)
-  .delaytime(1/4)
-  .delayfeedback(0.4)
-  .gain(0.35)
-  .orbit(1)
-  //.trancegate(1.5, 45, 1) //uncomment to gate/pump the chords
-
-// 4. OFFBEAT BASS (Optional for extra SwitchAngel trance drive)
-$: n("~ 0 ~ 0 ~ 0 ~ 0")
-  .add("<-14!4 -13!2>")
-  .scale("g:minor")
-  .add(note(-12))
-  .sound("square")
-  .decay(0.2)
-  .rlpf(slider(0.4461, 0.05, 0.9))
-  .gain(0.7)
-  .orbit(3)
-
-$: s("rolandtr909_bd:2!4").gain(1.2)._scope()  .orbit(0)
+// == BREAKDOWN IDEAS ==
+// - add .trancegate(1.5, 45, 1) to chords
+// - filter arpeggio down with slider
+// - disable bass (_$:)
+// - disable chord stabs (_$:)

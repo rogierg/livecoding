@@ -649,71 +649,6 @@ n("0 [4 <3 2>] <2 3> [~ 1]"
 | `off` | copy, shift time & modify | `s("bd sd, hh*4").off(1/8, x=>x.speed(2))` |
 ## Making Sound: Samples
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Samples
 
 Samples are the most common way to make sound with tidal and strudel.
@@ -1391,109 +1326,9 @@ After samples, let’s see what
 Synths
 afford us.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Making Sound: Synths
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Synths
 
@@ -1889,96 +1724,9 @@ Next up:
 Audio Effects
 …
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Making Sound: Audio Effects
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Audio Effects
 
@@ -2502,7 +2250,6 @@ The amplitude
 envelope
 controls the dynamic contour of a sound.
 Strudel uses ADSR envelopes, which are probably the most common way to describe an envelope:
-
 
 image link
 
@@ -3368,156 +3115,9 @@ Next, we’ll look at input / output via
 MIDI, OSC and other methods
 .
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Making Sound: MIDI & OSC
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 MIDI, OSC and MQTT
 
@@ -3964,102 +3564,9 @@ Will send messages like the following:
 
 Libraries for receiving MQTT are available for many programming languages.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## More: FAQ
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Frequently Asked Questions
 
@@ -4206,18 +3713,13 @@ Why doesn’t everyone just use a DAW?
 
 There is no easy answer to this question. Here are some thoughts:
 
-
 Live coding tools such as Strudel are excellent for improvising music and visuals using a computer. DAWs are valuable and robust companions for other activities such as producing, mastering and mixing audio, among other usages. Using a tool does not exclude from using any another tool, just build a toolbox.
-
 
 Live coding has developed over decades as a distinct creative practice. For example, live coding artists like to show their screens while playing in front of an audience. It is an essential part of what they do, of the way they share their activity with everybody.
 
-
 Code is a human language, it is made for other humans to read it. You can read the code and enjoy the music too. It has meaning, value, and there might even be something poetic/important about it! - Strudel is free and open source, you can inspect the code, reshape it, contribute to it if you can/want. It is not opaque and this matters for many people. There is no black box, no obscure abstractions, no business model, no user tracking or hidden features. We need open tools in the arts! - Live coders don’t all shy away from using DAWs. Many use them all of the time, especially when it makes their life easier for… live coding!
 
-
 Code is an artistic material like any other. There is something valuable in the process of making music through code. More generally speaking, it is nice to tackle creative problems through the use of a programming language: creative thinking, building up your own solutions, DIY approach to music-making, unexpected outcome of algorithms, funny human errors, etc.
-
 
 There are pianos and trumpets in your DAW: why do people continue playing the piano or the trumpet? Think of live coding tools as instruments that you activate through the act of programming.
 
@@ -4505,103 +4007,9 @@ s   increase by one semitone, i.e. sharp, works for steps of scales, note names 
 $:  at the start of a line, defines a member of the stack. is the only stack name that should occur multiple names
 _   before a stack name: mutes the stack, i.e. hush(), for example _$: s("bd"), see above for a different usage.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## More: Mini-Notation
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Mini-notation
 
@@ -4925,100 +4333,9 @@ Next: How do
 Samples
 play into this?
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## More: Visual Feedback
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Visual Feedback
 
@@ -5515,89 +4832,9 @@ Overrides the css of highlighted events. Make sure to use single quotes!
 note("c a f e")
 .markcss('text-decoration:underline')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## More: Mondo Notation
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Mondo Notation
 
@@ -5795,94 +5032,9 @@ keyword, you can define variables:
 $ def melody [0 1 2 3]
 $ n melody # scale C:minor
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## More: Music Metadata
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Music metadata
 
@@ -6009,86 +5161,9 @@ or
 @tag
 matching the search term will be shown.
 
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## More: Hydra
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Using Hydra inside Strudel
 
@@ -6129,84 +5204,9 @@ Using the
 feedStrudel
 option, you can transform strudel visualizations with hydra:
 
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## More: Input Devices
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Input Devices
 
@@ -6253,7 +5253,6 @@ X
 Y
 )
 
-
 Toggle versions:
 tglA
 ,
@@ -6281,7 +5280,6 @@ LT
 ,
 RT
 )
-
 
 Toggle versions:
 tglLB
@@ -6311,7 +5309,6 @@ l
 r
 or uppercase)
 
-
 Toggle versions:
 tglUp
 ,
@@ -6339,7 +5336,6 @@ ls
 rs
 )
 
-
 Toggle versions:
 tglL3
 , ‘tglR3’ (or
@@ -6358,7 +5354,6 @@ START
 ,
 BACK
 )
-
 
 Toggle versions:
 tglStart
@@ -6383,7 +5378,6 @@ x1
 y1
 (0 to 1 range)
 
-
 x1_2
 ,
 y1_2
@@ -6395,7 +5389,6 @@ x2
 ,
 y2
 (0 to 1 range)
-
 
 x2_2
 ,
@@ -6477,81 +5470,9 @@ Strudel supports multiple gamepads. You can specify the gamepad index to connect
 const pad1 = gamepad(0);  // First gamepad
 const pad2 = gamepad(1);  // Second gamepad
 
-
-
-
-
-
-
-
 ---
 
 ## Pattern Functions: Introduction
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Pattern Functions
 
@@ -6612,83 +5533,9 @@ When using JS patterns, there is a lot more you can do.
 Next, let’s look at how you can
 create patterns
 
-
-
-
-
-
-
-
-
-
 ---
 
 ## Pattern Functions: Creating Patterns
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Creating Patterns
 
@@ -6869,92 +5716,9 @@ After Pattern Constructors, let’s see what
 Time Modifiers
 are available.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Pattern Functions: Time Modifiers
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Time Modifiers
 
@@ -7309,105 +6073,9 @@ Apart from modifying time, there are ways to
 Control Parameters
 .
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Pattern Functions: Control Parameters
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Control Parameters
 
@@ -7486,12 +6154,9 @@ Param Value Modification
 
 To modify a parameter value, you can either:
 
-
 Use the operator on the plain value pattern, inside the param function:
 
-
 Similarly, use the operator on the plain value pattern and wrap it later:
-
 
 Specify which param should be modified inside the operator function:
 
@@ -7631,100 +6296,9 @@ From modifying parameters we transition to the concept of
 Signals
 .
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Pattern Functions: Signals
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Continuous Signals
 
@@ -7845,94 +6419,9 @@ n(mousey.segment(4).range(0,7)).scale("C:minor")
 Next up:
 Random Modifiers
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Pattern Functions: Random Modifiers
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Random Modifiers
 
@@ -8156,99 +6645,9 @@ s("hh*8").always(x=>x.speed("0.5"))
 Next up:
 Conditional Modifiers
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Pattern Functions: Conditional Modifiers
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Conditional Modifiers
 
@@ -8634,106 +7033,9 @@ After Conditional Modifiers, let’s see what
 Accumulation Modifiers
 have to offer.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Pattern Functions: Accumulation
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Accumulation Modifiers
 
@@ -8853,87 +7155,9 @@ There are also
 Tonal Functions
 .
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Pattern Functions: LFOs
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Low frequency oscillators (LFO)
 
@@ -9318,96 +7542,9 @@ s("saw").lpf(400).gain(0.8)
 .lfo({s: 4, dr:2, c:"gain"})
 .lfo({s: 0.3, sc: "skew"})
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Pattern Functions: Tonal Functions
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Tonal Functions
 
@@ -9543,86 +7680,9 @@ x => x.voicings('lefthand').struct("[~ x]*2").note(),
 x => x.rootNotes(2).note().s('sawtooth').cutoff(800)
 )
 
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Pattern Functions: Stepwise Functions
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Stepwise patterning (experimental)
 
@@ -9915,97 +7975,9 @@ zip("e f", "e f g", "g [f e] a f4 c").note()
    .sound("folkharp")
    .pace(8)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Understand: Coding Syntax
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Coding Syntax
 
@@ -10168,85 +8140,9 @@ will not be parsed as Mini Notation.
 
 The good news is, that this covers most of the JavaScript syntax needed for Strudel!
 
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Understand: Pitch
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Understanding Pitch
 
@@ -10443,87 +8339,9 @@ From
 wikipedia
 : “Pitch is a perceptual property of sounds that allows their ordering on a frequency-related scale, or more commonly, pitch is the quality that makes it possible to judge sounds as “higher” and “lower” in the sense associated with musical melodies.”
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Understand: Cycles
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Understanding Cycles
 
@@ -10650,85 +8468,9 @@ s(`<
 
 Now the 3 elements get the same time as the 4 elements, which is why the tempo changes.
 
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Understand: Voicings
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Understanding Chords and Voicings
 
@@ -11106,94 +8848,9 @@ $: n("0 - 1 -").set(chords).mode("root:g2").voicing()
 
 The chords are reused for melody, chords and bassline of the tune.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Understand: Pattern Alignment
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Pattern Alignment & Combination
 
@@ -11320,81 +8977,9 @@ Ok, so how do Strudel and Tidal
 compare
 ?
 
-
-
-
-
-
-
-
 ---
 
 ## Understand: Strudel vs Tidal
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Comparing Strudel and Tidal
 
@@ -11646,23 +9231,6 @@ note("c a f e").fast(.5625);
 
 Next up: the
 REPL
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
