@@ -26,23 +26,39 @@ The patterns file has uncommentable blocks for explaining effects. This is a liv
 ## Outline
 
 ### 1. Synthesis: Waveforms and Envelopes
-Start with a single note and explore the four basic waveforms — sine, square, sawtooth, triangle — with a scope to show the difference visually. Introduce three stages of the envelope (attack, sustain, release) to shape how a sound evolves over time. See [synthesis.js](synthesis.js).
+See [synthesis.js](synthesis.js).
+- Waveforms
+- Envelope: attack, decay, release
+- Subtractive synthesis: low-pass filter on sawtooth
 
 ### 2. Patterns
-Move to sequences — start with `0 1 2 3` to show how numbers become notes, introduce rests (`~`) to create rhythm, and build up to the full arpeggio. The pianoroll makes the pattern visible. See [patterns.js](patterns.js).
-
-The key insight is in the **intervals between the numbers**, not the numbers themselves:
-- `0 1 2 3` — jumps of +1, boring and mechanical
-- `0 2 4 6` — jumps of +2, more interesting
-- `0 3 5 7` — jumps of +3 +2 +2, this is where it becomes musical
+See [patterns.js](patterns.js).
+- Numbers become notes, `~` is a rest, pianoroll makes it visible
+- Intervals matter, not the numbers:
+  - `0 1 2 3` — mechanical
+  - `0 2 4 6` — more interesting
+  - `0 3 5 7` — musical
 
 ### 3. Filters, Effects and LFOs
-Return to synthesis and shape the arpeggio — low-pass filter to add warmth or brightness, reverb for space, delay for echo. Then animate the filter with an LFO (sine/saw signals) to create movement and evolving textures.
+- Low-pass filter, reverb, delay on the arpeggio
+- LFO on the filter for movement
 
 ### 4. Chords
-Introduce a second layer — supersaw chords alongside the arpeggio. Show how harmony works and how multiple patterns stack. Explore transposing to create chord progressions.
+- Supersaw chords as a second layer
+- Harmony, stacking, chord progressions
 
 ### 5. Rhythm
-Add the drum section — build a pattern from scratch, swap sounds, and use dynamics to make it hit. See [rhythm.js](rhythm.js).
+See [rhythm.js](rhythm.js).
+- Build a drum pattern, swap sounds, add dynamics
+- Euclidean rhythms: `bd(3,8)` = tresillo, `hh(5,8)` = bossa nova, third arg rotates
 
-Introduce Euclidean rhythms with the `(hits, steps)` syntax — a mathematical way to distribute beats as evenly as possible over a number of steps. `bd(3,8)` gives the classic tresillo, `hh(5,8)` a bossa nova feel. A third argument rotates the pattern. Stack multiple Euclidean patterns for complex grooves with minimal notation.
+---
+
+## TODO
+
+- Add a Strudel basics intro (cycles, mini-notation, how the REPL works)
+- Move Effects + LFOs to directly after Patterns — introduce filter and LFO before chords, not after
+- Move Rhythm to directly after Patterns as well — drum patterns before harmony may flow better
+- LFO section: make clear that LFOs add movement — modulating effects over time, not just static values
+- Rhythm: explore other algorithmic approaches beyond Euclidean (e.g. polyrhythm, `off`, `struct`)
+
