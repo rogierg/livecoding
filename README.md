@@ -33,11 +33,12 @@ See [synthesis.js](synthesis.js).
 
 ### 2. Patterns
 See [patterns.js](patterns.js).
-- Numbers become notes, `~` is a rest, pianoroll makes it visible
+- Numbers become notes, `.add(62)` sets the base note (D4), `~` is a rest
 - Intervals matter, not the numbers:
-  - `0 1 2 3` — mechanical
-  - `0 2 4 6` — more interesting
-  - `0 3 5 7` — musical
+  - `0 1 3 5` — boring
+  - `0 3 7 10` — more interesting
+  - `~ 0 ~ 5 ~ 8 ~ 12` — musical (rests add groove)
+  - `~ <0!4 1!4> ~ 5 ~ 8 ~ <12!4 13!4>` — alternates every 4 bars
 
 ### 3. Filters, Effects and LFOs
 - Low-pass filter, reverb, delay on the arpeggio

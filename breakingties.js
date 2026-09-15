@@ -25,9 +25,8 @@ $: s("[rolandtr909_hh rolandtr909_hh](3,8)").gain(0.5)
   .delay(0.5).delaytime(1/3).delayfeedback(0.3)
 _$:s("~ rolandtr909_oh").fast(4).gain(0.5).decay(0.08)
 
-// STEP 2: CHORD STABS — hits on beat 1 and 2, enable by removing _
-_$: chord("<Gm7 Eb^7 BbM7 D7>").dict('ireal')
-  .voicing()
+// STEP 2: CHORD STABS — hits on beat 1 and 2
+_$: note("<[g3,d4] [eb4,bb4]>")
   .s("supersaw")
   .decay(0.1)
   .sustain(0)
@@ -37,8 +36,9 @@ _$: chord("<Gm7 Eb^7 BbM7 D7>").dict('ireal')
   .room(1)
   .gain(0.6)
   .orbit(1)
+  ._pianoroll({height: 150})
 
-// STEP 3: CHOIR PAD — soft layer, enable by removing _
+// STEP 3: CHOIR PAD — soft layer
 _$: chord("<Gm7 Eb^7 BbM7 D7>").dict('ireal')
   .voicing()
   .s("wt_stringbox:7")
@@ -48,7 +48,7 @@ _$: chord("<Gm7 Eb^7 BbM7 D7>").dict('ireal')
   .gain(0.35)
   .orbit(4)
 
-// STEP 4: TRANCE BASS — dum dadumdum, enable by removing _
+// STEP 4: TRANCE BASS
 _$: n("<3@3 4 5 @3 6>".add("-14, -21")).scale("D4:phrygian")
   .s("z_sawtooth")
   .decay(0.2)
@@ -59,7 +59,7 @@ _$: n("<3@3 4 5 @3 6>".add("-14, -21")).scale("D4:phrygian")
   .rlpf(slider(0.28885, 0.05, 0.9))
   .orbit(3)
 
-// STEP 5: ARPEGGIO — enable by removing _
+// STEP 5: ARPEGGIO
 _$: note("[~ <0!4 1!4> ~ 5 ~ 8 ~ <12!4 13!4>]".add(62))
   .sound("gm_lead_2_sawtooth")
   .decay(0.1)
@@ -71,16 +71,11 @@ _$: note("[~ <0!4 1!4> ~ 5 ~ 8 ~ <12!4 13!4>]".add(62))
   .delaytime(1/3)
   .delayfeedback(0.6)
   .orbit(2)
+  ._pianoroll({height: 150})
 
-// VOCALS — each sample plays for 4 bars in order, enable by removing _
+// VOCALS — each sample plays for 4 bars in order
 _$: s("<1_windblows 2_tothebone 3_youknow 4_notalone>")
   .slow(4)
   .room(0.6)
   .rhpf(slider(0.4199, 0.05, 0.95))
   .gain(0.8)
-
-// == BREAKDOWN IDEAS ==
-// - add .trancegate(1.5, 45, 1) to chords
-// - filter arpeggio down with slider
-// - disable bass (_$:)
-// - disable chord stabs (_$:)
