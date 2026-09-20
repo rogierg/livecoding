@@ -1,5 +1,6 @@
-// Four-to-the-floor kick with a high G piano accent on every other offbeat.
 setcpm(120 / 4)
 
-$: sound("bd*4")
-$: note("[~ g5]*2").sound("piano")
+$: note("[~ g5 ~ g6 ~ g7 ~ d#7 ~ d7]*2").sound("piano")
+
+// STEP 1: KICK
+$: s("rolandtr909_bd:2!4").gain(.7)._scope().orbit(0)
