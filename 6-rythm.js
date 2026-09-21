@@ -1,5 +1,5 @@
 // @title 6. Rhythm
-// @author Electronic Samurai
+// @by Electronic Samurai
 // Examples focused on rhythmic ideas using Strudel mini-notation
 
 // Basic beats

@@ -1,5 +1,5 @@
 // @title 5. Bassline
-// @author Electronic Samurai
+// @by Electronic Samurai
 
 // LOAD PREBAKE SCRIPT (needed for trancegate)
 await fetch('https://raw.githubusercontent.com/switchangel/strudel-scripts/refs/heads/main/prebake.strudel')

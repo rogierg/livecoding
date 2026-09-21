@@ -1,5 +1,5 @@
 // @title 1. Synthesis
-// @author Electronic Samurai
+// @by Electronic Samurai
 
 // SINGLE NOTE
 $: note("d4 ~")
