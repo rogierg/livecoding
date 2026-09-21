@@ -75,6 +75,11 @@ Effects and LFO's add movement. The same pattern becomes more interesting.
 
 ### 4. Chords
 See [4-chords.js](4-chords.js).
+
+> Show hands! Who knows what a chord is?
+
+Multiple notes played at the same time.
+
 - Supersaw chords as a second layer
 - Harmony, stacking, chord progressions
 
@@ -84,10 +89,12 @@ See [5-bassline.js](5-bassline.js).
 - Struct syncopation: `[1@2 1 1]*4` = dum dadumdum
 - Walking bass following the chord progression
 
-### 6. Rhythm
-See [6-rythm.js](6-rythm.js).
+### 6. Drums
+See [6-drums.js](6-drums.js).
 
-Rythm provides, well, rythm. It is the percussive elements that accompany the sounds.
+> Show hands! Who knows what drums are?
+
+Drums are the percussive elements that accompany the sounds.
 
 - Build a drum pattern, swap sounds, add dynamics
 - Euclidean rhythms: `bd(3,8)` = tresillo, `hh(5,8)` = bossa nova, third arg rotates

@@ -1,4 +1,4 @@
-// @title 6. Rhythm
+// @title 6. Drums
 // @by Electronic Samurai
 // Examples focused on rhythmic ideas using Strudel mini-notation
 
