@@ -74,7 +74,7 @@ _$: note("[~ <0!4 1!4> ~ 5 ~ 8 ~ <12!4 13!4>]".add(62))
   ._pianoroll({height: 150})
 
 // VOCALS — each sample plays for 4 bars in order
-_$: s("<1-windblows 2-tothebone 3-youknow 4-notalone>")
+_$: s("<1_windblows 2_tothebone 3_youknow 4_notalone>")
   .slow(4)
   .room(0.6)
   .rhpf(slider(0.4199, 0.05, 0.95))
