@@ -4,13 +4,15 @@
 
 // Basic beats
 setcpm(130/4)
-$: sound("bd hh sd hh").bank("RolandTR909")._pianoroll({height: 150})
+
+$: sound("bd").bank("RolandTR909")
+//$: sound("hh").bank("RolandTR909")
+//$: sound("sd").bank("RolandTR909")
+
+//$: sound("bd hh sd hh").bank("RolandTR909")._pianoroll({height: 150})
 
 // Rarely / random variations for humanized beats
 //$: sound("bd hh sd hh").bank("RolandTR909").rarely(ply("4"))._pianoroll({height: 150})
-
-// Off-beat and ghost notes — small transient events for groove
-//$: sound("bd ~ sd:1 ~ hh*8").bank("RolandTR707").gain(.8)._pianoroll({height: 150})
 
 // Euclidean rhythms — (hits, steps) distributes hits as evenly as possible
 // $: sound("bd(3,8)").bank("RolandTR909")._pianoroll({height: 150})           // tresillo — 3 hits over 8 steps

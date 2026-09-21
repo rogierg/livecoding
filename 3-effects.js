@@ -7,7 +7,7 @@ $: note("[~ <0!4 1!4> ~ 5 ~ 8 ~ <12!4 13!4>]".add(62))
   .attack(0.01)
   .decay(0.5)
   .release(0.1)
-  .rlpf(slider(0.5, 0.05, 0.95))
+  .rlpf(slider(0.73, 0.05, 0.95))
   //.rlpf(sine.range(0.5, 0.7).slow(8))               // LFO on resonant filter — movement
   //.room(0.6)                                        // reverb
   //.delay(0.8).delaytime(1/3).delayfeedback(0.6)     // delay

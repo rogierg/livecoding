@@ -43,6 +43,8 @@ Different ways of making music give different results. A DAW gives you full cont
 ### 1. Synthesis: Waveforms and Envelopes
 See [1-synthesis.js](1-synthesis.js).
 
+> Show hands! Who plays music? Who knows sound?
+
 To make music we need sound.
 
 - Waveforms: how do they sound?
@@ -70,16 +72,28 @@ Effects and LFO's add movement. The same pattern becomes more interesting.
 - LFO on the filter for movement
 
 ### 4. Chords
+See [4-chords.js](4-chords.js).
 - Supersaw chords as a second layer
 - Harmony, stacking, chord progressions
 
-### 5. Rhythm
+### 5. Bassline
+See [5-bassline.js](5-bassline.js).
+- Simple repeating bass note
+- Struct syncopation: `[1@2 1 1]*4` = dum dadumdum
+- Walking bass following the chord progression
+
+### 6. Rhythm
+See [6-rythm.js](6-rythm.js).
 
 Rythm provides, well, rythm. It is the percussive elements that accompany the sounds.
 
-See [6-rythm.js](6-rythm.js).
 - Build a drum pattern, swap sounds, add dynamics
 - Euclidean rhythms: `bd(3,8)` = tresillo, `hh(5,8)` = bossa nova, third arg rotates
+
+### 7. Putting it all together
+See [breakingties.js](breakingties.js).
+
+Live performance of Breaking Ties — build up from kick to full track, then break it down.
 
 ---
 
@@ -87,24 +101,15 @@ See [6-rythm.js](6-rythm.js).
 
 - Add a Strudel basics intro (cycles, mini-notation, how the REPL works)
 - Explain chords
-- Rhythm: explain struct
 - Have a way to set everything ready 
 
 ## FEEDBACK
 
 - What are notes, why so high, what is a filter
-- Why am I listening to stupid sounds: why are we going to do this?
-- Show the song we are going to work to
-- Can I play along? Or record? No you can't but that helps with restriction comes creativity
 - Too fast on the synthesis bit
 - Chords maybe a bit more details
 - Explain the different types of sounds bassline
 - Uncomment lines one at a time
-
-- Suggestion for flow
-    - 1st third lot of detail
-    - 2nd third this is what you can do (not so much detail)
-    - 3rd third let's make a song (add details)
 
 - Add call to action
 
