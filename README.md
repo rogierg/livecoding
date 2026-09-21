@@ -8,6 +8,13 @@ The patterns file has uncommentable blocks for explaining effects. This is a liv
 
 ---
 
+## Keyboard shortcuts
+
+- `Ctrl+Enter` — run the current code
+- `Ctrl+.` — stop all sound
+
+---
+
 ## What you need
 
 - A PC with a modern browser (Chrome or Firefox recommended)
@@ -21,26 +28,40 @@ The patterns file has uncommentable blocks for explaining effects. This is a liv
 - [Strudel Workshop Documentation](strudel-docs.md) — full local copy of the strudel.cc workshop and reference pages
 - [strudel-samples.alternet.site](https://strudel-samples.alternet.site) — community-hosted sample packs, load with `samples('github:user/repo')` or direct URL
 
+## Credits
+
+The vocal samples and song idea in [breakingties.js](breakingties.js) are based on [Breaking Ties by OceanLab](https://open.spotify.com/track/2cdITcC7b0fnoPtI5F2IHk?si=e5808b3b006c47ed).
+
 ---
 
 ## Outline
 
 ### 1. Synthesis: Waveforms and Envelopes
 See [synthesis.js](synthesis.js).
-- Waveforms
+
+To make music we need sound.
+
+- Waveforms: how do they sound?
 - Envelope: attack, decay, release
-- Subtractive synthesis: low-pass filter on sawtooth
+- Subtractive synthesis: low-pass filter on sawtooth/squarewave
 
 ### 2. Patterns
 See [patterns.js](patterns.js).
+
+Music is basically patterns of sounds.
+
 - Numbers become notes, `.add(62)` sets the base note (D4), `~` is a rest
 - Intervals matter, not the numbers:
-  - `0 1 3 5` — boring
+  - `0 1 2 3` — mechanical (chromatic)
+  - `0 2 4 7` — familiar (major feel)
   - `0 3 7 10` — more interesting
   - `~ 0 ~ 5 ~ 8 ~ 12` — musical (rests add groove)
   - `~ <0!4 1!4> ~ 5 ~ 8 ~ <12!4 13!4>` — alternates every 4 bars
 
 ### 3. Filters, Effects and LFOs
+
+Effects and LFO's add movement. The same pattern becomes more interesting.
+
 - Low-pass filter, reverb, delay on the arpeggio
 - LFO on the filter for movement
 
@@ -49,6 +70,9 @@ See [patterns.js](patterns.js).
 - Harmony, stacking, chord progressions
 
 ### 5. Rhythm
+
+Rythm provides, well, rythm. It is the percussive elements that accompany the sounds.
+
 See [rhythm.js](rhythm.js).
 - Build a drum pattern, swap sounds, add dynamics
 - Euclidean rhythms: `bd(3,8)` = tresillo, `hh(5,8)` = bossa nova, third arg rotates
@@ -58,8 +82,25 @@ See [rhythm.js](rhythm.js).
 ## TODO
 
 - Add a Strudel basics intro (cycles, mini-notation, how the REPL works)
-- Move Effects + LFOs to directly after Patterns — introduce filter and LFO before chords, not after
-- Move Rhythm to directly after Patterns as well — drum patterns before harmony may flow better
-- LFO section: make clear that LFOs add movement — modulating effects over time, not just static values
-- Rhythm: explore other algorithmic approaches beyond Euclidean (e.g. polyrhythm, `off`, `struct`)
+- Explain chords
+- Rhythm: explain struct
+- Have a way to set everything ready 
+
+## FEEDBACK
+
+- What are notes, why so high, what is a filter
+- Why am I listening to stupid sounds: why are we going to do this?
+- Show the song we are going to work to
+- Can I play along? Or record? No you can't but that helps with restriction comes creativity
+- Too fast on the synthesis bit
+- Chords maybe a bit more details
+- Explain the different types of sounds bassline
+- Uncomment lines one at a time
+
+- Suggestion for flow
+    - 1st third lot of detail
+    - 2nd third this is what you can do (not so much detail)
+    - 3rd third let's make a song (add details)
+
+- Add call to action
 

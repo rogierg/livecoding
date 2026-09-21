@@ -1,10 +1,10 @@
 // @title Patterns
 
 // ARPEGGIO
-$: note("[0 1 3 5]".add(62))                           // boring
-  //note("[0 3 7 10]".add(62))                          // +2 more interesting
-  //note("[~ 0 ~ 3 ~ 7 ~ 10]".add(62))                  // add rests
-  //note("[~ 0 ~ 5 ~ 8 ~ 12]".add(62))                  // musical
+$: note("[0 1 2 3]".add(62))                            // mechanical (chromatic)
+  //note("[0 2 4 7]".add(62))                            // familiar (major feel)
+  //note("[0 3 7 10]".add(62))                           // more interesting
+  //note("[~ 0 ~ 5 ~ 8 ~ 12]".add(62))                  // musical (rests add groove)
   //note("[~ <0!4 1!4> ~ 5 ~ 8 ~ <12!4 13!4>]".add(62)) // alternates every 4 bars
   .sound("supersaw")
   .attack(0.01)
