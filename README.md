@@ -30,6 +30,8 @@ The patterns file has uncommentable blocks for explaining effects. This is a liv
 
 ## Credits
 
+The arrangement pattern in [switchangel.js](switchangel.js) is based on a song by [Switch Angel](https://www.youtube.com/@switch-angel).
+
 The vocal samples and song idea in [breakingties.js](breakingties.js) are based on [Breaking Ties by OceanLab](https://open.spotify.com/track/2cdITcC7b0fnoPtI5F2IHk?si=e5808b3b006c47ed).
 
 ---
@@ -97,6 +99,11 @@ Live performance of Breaking Ties — build up from kick to full track, then bre
 
 ---
 
+## Try it yourself
+
+You have everything you need to get started — open [strudel.cc](https://strudel.cc) and try it. The full Strudel reference is in [strudel-docs.md](strudel-docs.md), and [Switch Angel on YouTube](https://www.youtube.com/@switch-angel) is a great place to go deeper.
+---
+
 ## TODO
 
 - Add a Strudel basics intro (cycles, mini-notation, how the REPL works)
@@ -105,11 +112,7 @@ Live performance of Breaking Ties — build up from kick to full track, then bre
 
 ## FEEDBACK
 
-- What are notes, why so high, what is a filter
 - Too fast on the synthesis bit
-- Chords maybe a bit more details
-- Explain the different types of sounds bassline
-- Uncomment lines one at a time
 
 - Add call to action
 
