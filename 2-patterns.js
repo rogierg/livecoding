@@ -1,4 +1,5 @@
-// @title Patterns
+// @title 2. Patterns
+// @author Electronic Samurai
 
 // ARPEGGIO
 $: note("[0 1 2 3]".add(62))                            // mechanical (chromatic)

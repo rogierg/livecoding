@@ -1,4 +1,5 @@
-// @title Chords
+// @title 4. Chords
+// @author Electronic Samurai
 
 // BUILD A CHORD — root, then add intervals one by one
 $: note("g3")

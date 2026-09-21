@@ -1,7 +1,7 @@
 {
   "_base": "https://raw.githubusercontent.com/rogierg/livecoding/main/",
-  "1_windblows": "1_windblows.wav",
-  "2_tothebone": "2_tothebone.wav",
-  "3_youknow": "3_youknow.wav",
-  "4_notalone": "4_notalone.wav"
+  "1-windblows": "1-windblows.wav",
+  "2-tothebone": "2-tothebone.wav",
+  "3-youknow": "3-youknow.wav",
+  "4-notalone": "4-notalone.wav"
 }

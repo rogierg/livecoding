@@ -1,4 +1,5 @@
-// @title Effects
+// @title 3. Effects
+// @author Electronic Samurai
 
 // ARPEGGIO — with effects
 $: note("[~ <0!4 1!4> ~ 5 ~ 8 ~ <12!4 13!4>]".add(62))

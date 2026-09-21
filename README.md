@@ -36,8 +36,12 @@ The vocal samples and song idea in [breakingties.js](breakingties.js) are based 
 
 ## Outline
 
+### 0. Why live coding?
+
+Different ways of making music give different results. A DAW gives you full control but infinite choices. An instrument gives you feel but takes years to master. Live coding is different: it is structured by nature, which forces focus on patterns and repetition. The constraints are the point — restrictions feed the creative process, and happy accidents happen when the code does something unexpected.
+
 ### 1. Synthesis: Waveforms and Envelopes
-See [synthesis.js](synthesis.js).
+See [1-synthesis.js](1-synthesis.js).
 
 To make music we need sound.
 
@@ -46,7 +50,7 @@ To make music we need sound.
 - Subtractive synthesis: low-pass filter on sawtooth/squarewave
 
 ### 2. Patterns
-See [patterns.js](patterns.js).
+See [2-patterns.js](2-patterns.js).
 
 Music is basically patterns of sounds.
 
@@ -73,7 +77,7 @@ Effects and LFO's add movement. The same pattern becomes more interesting.
 
 Rythm provides, well, rythm. It is the percussive elements that accompany the sounds.
 
-See [rhythm.js](rhythm.js).
+See [6-rythm.js](6-rythm.js).
 - Build a drum pattern, swap sounds, add dynamics
 - Euclidean rhythms: `bd(3,8)` = tresillo, `hh(5,8)` = bossa nova, third arg rotates
 
