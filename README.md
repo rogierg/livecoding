@@ -4,6 +4,8 @@
 
 We work with code every day, but music is also built on patterns and logical structures. In this live demo I'll show how we can generate music directly in the browser using only code, and how musical ideas like rhythm, harmony, and progression can be expressed through simple logic and repetition.
 
+Strudel is deterministic, so the same code produces the same result. That makes it useful for working with AI: we can change a pattern, listen to the result, and roll back or compare changes as we iterate.
+
 The patterns file has uncommentable blocks for explaining effects. This is a live demo so typing is kept to a minimum. Patterns will be loaded between major steps which may lead to errors.
 
 ---
